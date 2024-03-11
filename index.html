@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womp Womp</title>
+    <style>
+        @font-face {
+            font-family: 'YourCustomFont';
+            src: url(fonts/Shit\ Happens\ trial\ d__.otf) format('truetype'); /* Update with the correct file path and format */
+            font-weight: normal;
+            font-style: bold;
+        }
+
+        body {
+            background-image: url('/images/Coquette\ rat\ sad\ hamster\ meme.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensures the content takes at least the full height of the viewport */
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'YourCustomFont', cursive;
+            color: #01000c;
+            font-size: 10.0em;
+            font-style: bold;
+            font-style: italic;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+           
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-image: round;
+        }
+
+        .audio-container {
+            background-color: rgb(58, 2, 2);
+            border-radius: 15px;
+            border: 2px solid rgb(58, 2, 2);
+            margin-top: 10px;
+            width: 50%; 
+        }
+
+        audio {
+            width: 100%; 
+            border-radius: 15px;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: rgb(90, 46, 46);
+            border-radius: 15px;s
+        }
+
+        footer {
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            font-family: 'New roman', cursive; /* Apply the custom font to the footer */
+            color: #220101;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>hello bro <img src="images/favicon.ico" alt="me"></h1>
+    </header>
+
+    <section>
+        <h2>Bonjour</h2>
+        <p>Cho literally me <B>:P</B> :</p>
+        <img src="/images/Coquette rat sad hamster meme.jpeg" alt="Womp Womp Image">
+    </section>
+
+    <div class="audio-container">
+        <audio controls autoplay id="myAudio">
+            <source src="womp.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <footer>
+        <p>&copy; cordialement, mok <img src="images/favicon.ico" alt="mwah"> </p>
+    </footer>
+
+    <script>
+        document.getElementById("myAudio").volume = 0.25; 
+    </script>
+</body>
+</html>
